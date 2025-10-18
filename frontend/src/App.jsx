@@ -7,6 +7,8 @@ import axios from 'axios';
 import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import dayjs from 'dayjs';
+import BibleSearch from "./components/BibleSearch";
+
 
 const resources = {
   en: { translation: {
@@ -247,6 +249,15 @@ export default function App() {
           )}
 
         </section>
+        function App() {
+  return (
+    <div>
+      {/* Other content */}
+      <BibleSearch />
+    </div>
+  );
+}
+
       </main>
 
       <footer className="bg-white mt-6 py-4"><div className="max-w-6xl mx-auto px-4 text-sm text-gray-600 flex justify-between"><div>© {new Date().getFullYear()} Learn The Faith Word</div><div>Designed with care — Multilingual + Bible multi-version ready</div></div></footer>
